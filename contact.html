@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grip & Flip Landscaping - Contact</title>
+	<link rel="icon" href="images/icon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src=""></script>
+
+<script>
+	function setHref(){
+		document.getElementById("_next").value = window.location.href;
+	}
+</script>
+
+<style>
+
+</style>
+
+</head>
+
+<body onLoad="setHref();">
+	<header>
+		<img width="150px" class="logo" src="images/logo.png" alt="logo" />
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Portfolio</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<h1>Contact</h1>
+	<h3>Please send us a message and we will send you a quote</h3>
+	<form action="https://formsubmit.co/0d2d201eed2ed8bbf49b74e4f03bb981" method="post">
+		<input type="hidden" name="_captcha" value="false">
+		<input type="hidden" id="_next" name="_next" value="">
+		<label for="name">Name:</label><br /><input type="text" id="name" name="name" placeholder="Alex" required="required"><br />
+		<label for="phone">Phone #:</label><br /><input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required"><br />
+		<label for="email">Email:</label><br /><input type="email" id="email" name="email" placeholder="Alex@email.com" required="required"><br />
+		<label for="city">City:</label><br /><input type="text" id="city" name="city" placeholder="Woburn"><br />
+		<label for="address">Address:</label><br /><input type="text" id="address" name="address" placeholder="1 Main St."><br />
+		<p>Contact Preference</p>
+		<div style="position:relative;text-align:left;width:70%;left:15%;padding: 0% 10%;">
+		<input type="radio" name="preference" value="email"><label for="preference">Email</label><br />
+		<input type="radio" name="preference" value="text"><label for="preference">Phone (Text)</label><br />
+		<input type="radio" name="preference" value="call"><label for="preference">Phone (Call)</label><br />
+		</div>
+		
+		<label for="message">Message:</label><br /><textarea rows="10;" required="required" name="Message"style="font-size:15pt;width:80%;height:20%;margin-left:10%;margin-right:10%;"></textarea>
+		<button type="submit">Send</button>
+	</form>
+	
+	<div class="foot">email: GripAndFlip2023@gmail.com<br> Alex's Phone #:781-941-9327<br>Ben's Phone #:617-981-0806</div>
+	
+</body>
+
+</html>

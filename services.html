@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grip & Flip Landscaping - Portfolio</title>
+	<link rel="icon" href="images/icon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src=""></script>
+
+<script>
+var head = 0;
+var headarray = ["Before", "After", "Before", "After", "Before", "After"];
+var image = 0;
+var imagearray =["images/before1.jpg", "images/after1.jpg", "images/before2.jpg", "images/after2.jpg", "images/before3.jpg", "images/after3.jpg"];
+var info = 0;
+var infoarray = [""];
+
+function next(){
+	if(head == headarray.length - 1) head = 0;
+	else head++;
+	if(image == imagearray.length - 1) image = 0;
+	else image++;
+	if(info == infoarray.length - 1) info = 0;
+	else info++;
+	update();
+}
+
+function previous(){
+	if(head == 0) head = headarray.length - 1;
+	else head--;
+	if(image == 0)image = imagearray.length - 1;
+	else image--;
+	if(info == 0) info = infoarray.length - 1;
+	else info--;
+	update();
+}
+
+function update(){
+	document.getElementById("head").innerHTML = headarray[head];
+	document.getElementById("image").innerHTML = "<img src='" + imagearray[image] + "' style='width:100%;' alt='service' />";
+	document.getElementById("info").innerHTML = infoarray[info];
+}
+
+</script>
+
+<style>
+
+</style>
+
+</head>
+
+<body onload="update();">
+	<header>
+		<img width="150px" class="logo" src="images/logo.png" alt="logo" />
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="reviews.html">Reviews</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<h1>Portfolio</h1>
+	<h2 id="head">Before</h2>
+	<div id="slideshow">
+	<div id="back" onclick="previous();"><</div>
+	<div id="image"><img src="images/before1.jpg" style="width:100%;" alt="service" /></div>
+	<div id="forward" onClick="next();">></div>
+	</div>
+	<div id="info">Mulching: $10/sqft</div>
+	
+	<div class="foot">email: GripAndFlip2023@gmail.com<br> Alex's Phone #:781-941-9327<br>Ben's Phone #:617-981-0806</div>
+	
+</body>
+
+</html>

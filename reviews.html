@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Grip & Flip Landscaping - Reviews</title>
+	<link rel="icon" href="images/icon.png" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src=""></script>
+
+<script>
+	function setHref(){
+		document.getElementById("_next").value = window.location.href;
+	}
+</script>
+
+<style>
+
+</style>
+
+</head>
+
+<body onLoad="setHref();">
+	<header>
+		<img width="150px" class="logo" src="images/logo.png" alt="logo" />
+		<nav>
+			<ul class="nav_links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="services.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="#">Reviews</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<h1>Reviews</h1>
+	<h3>If you are satisfied with our services, please consider leaving a review</h3>
+	
+	<form action="https://formsubmit.co/0d2d201eed2ed8bbf49b74e4f03bb981" method="post">
+		<input type="hidden" name="_captcha" value="false">
+		<input type="hidden" id="_next" name="_next" value="">
+		<label for="name">Name:</label><br /><input type="text" id="name" name="name" placeholder="Alex" required="required"><br />
+		<p>Rating:</p>
+		<div style="position:relative;text-align:left;width:30%;left:35%;padding: 0% 10%;">
+		<input type="radio" name="rating" value="1"><label for="rating">1</label><br />
+		<input type="radio" name="rating" value="2"><label for="rating">2</label><br />
+		<input type="radio" name="rating" value="3"><label for="rating">3</label><br />
+		<input type="radio" name="rating" value="4"><label for="rating">4</label><br />
+		<input type="radio" name="rating" value="5"><label for="rating">5</label><br />
+		</div>
+		
+		<label for="message">Message:</label><br /><textarea rows="10;" required="required" name="Message"style="font-size:15pt;width:80%;height:20%;margin-left:10%;margin-right:10%;"></textarea>
+		<button type="submit">Send</button>
+	</form>
+	
+	<div class="foot">email: GripAndFlip2023@gmail.com<br> Alex's Phone #:781-941-9327<br>Ben's Phone #:617-981-0806</div>
+	
+</body>
+
+</html>
